@@ -1,5 +1,6 @@
 package ea.jeff.algorithms;
 
+import ea.jeff.util.Jrng;
 import ea.jeff.util.Point;
 
 public abstract class DiamondSquareBuilder {

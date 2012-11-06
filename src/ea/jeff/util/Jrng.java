@@ -1,4 +1,4 @@
-package ea.jeff.algorithms;
+package ea.jeff.util;
 
 import java.util.LinkedList;
 
