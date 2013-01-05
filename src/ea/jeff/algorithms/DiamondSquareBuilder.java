@@ -24,6 +24,10 @@ public abstract class DiamondSquareBuilder {
 	protected float noise;
 	
 	public DiamondSquareBuilder() {
+		reset();
+	}
+	
+	public void reset() {
 		topLeft = new Point(0, 0);
 		topRight = new Point(0, 0);
 		bottomLeft = new Point(0, 0);
@@ -37,8 +41,12 @@ public abstract class DiamondSquareBuilder {
 		center = new Point(0, 0);
 	}
 	
-	public void seedRng(int a, int b) {
-		rand = new Jrng(a, b);
+	public void seedRng(int a, int b, int c, int d) {
+		rand = new Jrng(a, b, c, d);
+	}
+	
+	public void seedRng() {
+		rand = new Jrng();
 	}
 	
 	/**

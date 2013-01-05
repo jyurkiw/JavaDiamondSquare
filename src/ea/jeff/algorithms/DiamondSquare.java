@@ -11,12 +11,6 @@ public class DiamondSquare {
 		this.size = size;
 		dimension = (int)Math.pow(2, size);
 		data = new float[dimension + 1][dimension + 1];
-		
-//		for(int x = 0; x <= dimension; x++) {
-//			for (int y = 0; y <= dimension; y++) {
-//				data[x][y] = 0.0f;
-//			}
-//		}
 	}
 	
 	public float getHeightAt(int x, int y) {

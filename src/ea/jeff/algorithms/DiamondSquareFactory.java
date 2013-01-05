@@ -16,6 +16,7 @@ public class DiamondSquareFactory {
 		
 		if (algorithm instanceof DiamondSquareBuilder) {
 			DiamondSquareBuilder builder = (DiamondSquareBuilder)algorithm;
+			builder.reset();
 			builder.setNoise(noise);
 		}
 		
@@ -50,10 +51,17 @@ public class DiamondSquareFactory {
 		this.algorithm = algorithm;
 	}
 	
-	public void seedRng(int a, int b) {
+	public void seedRng(int a, int b, int c, int d) {
 		if (algorithm instanceof DiamondSquareBuilder) {
 			DiamondSquareBuilder builder = (DiamondSquareBuilder)algorithm;
-			builder.seedRng(a, b);
+			builder.seedRng(a, b, c, d);
+		}
+	}
+	
+	public void seedRng() {
+		if (algorithm instanceof DiamondSquareBuilder) {
+			DiamondSquareBuilder builder = (DiamondSquareBuilder)algorithm;
+			builder.seedRng();
 		}
 	}
 }
